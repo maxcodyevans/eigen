@@ -11,12 +11,13 @@ Rails.application.routes.draw do
        match '/toefl', :to => 'profiles#toefl',          via: 'get'
     match '/gre', :to => 'profiles#gre',          via: 'get'
      match '/sat', :to => 'profiles#sat',          via: 'get'
-     match '/gmat', :to => 'profiles#sat',          via: 'get'
+     match '/gmat', :to => 'profiles#gmat',          via: 'get'
         match '/gremathdiagnostic', :to => 'profiles#gremathdiagnostic',          via: 'get'
     match '/greverbaldiagnostic', :to => 'profiles#greverbaldiagnostic',          via: 'get'
    match '/toefldiagnostic', :to => 'profiles#toefldiagnostic',          via: 'get'
    match '/gmatmathdiagnostic', :to => 'profiles#gmatmathdiagnostic',          via: 'get'
      match '/diagnostic', :to => 'profiles#diagnostic',          via: 'get'
+      match '/landing', :to => 'profiles#landing',          via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

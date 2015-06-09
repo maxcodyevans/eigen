@@ -1,3 +1,14 @@
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63936822-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <header>
              
         <nav class="top-bar" data-topbar>
@@ -8,7 +19,7 @@
               
                 	
             
-                  <%= link_to image_tag("logo.png", class: "logo-icon"), root_path %>
+                  <%= link_to image_tag("logo.png", class: "logo-icon"), landing_path %>
                   <a class="logo-name"><b>Eigen</b> Prep</a> 
                    
               </li>
@@ -27,7 +38,7 @@
            
         
               <li class="has-dropdown">
-                <a href="#">SAT</a>
+                <%= link_to 'SAT'.html_safe, sat_path  %>
                 <ul class="dropdown">
                   <li><%= link_to 'About'.html_safe, sat_path  %></li>
                   <li><%= link_to 'Diagnostic'.html_safe, diagnostic_path  %></li>
@@ -38,7 +49,7 @@
               </li>
              
              <li class="has-dropdown">
-                <a href="#">GRE</a>
+                <%= link_to 'GRE'.html_safe, gre_path  %>
                 <ul class="dropdown">
                   <li><%= link_to 'About'.html_safe, gre_path  %></li>
                   <li><%= link_to 'Diagnostic'.html_safe, diagnostic_path  %></li>
@@ -50,7 +61,7 @@
              
            
               <li class="has-dropdown">
-                <a href="#">GMAT</a>
+                <%= link_to 'GMAT'.html_safe, gmat_path  %>
                 <ul class="dropdown">
                       <li><%= link_to 'About'.html_safe, gmat_path  %></li>
                   <li><%= link_to 'Diagnostic'.html_safe, diagnostic_path  %></li>
@@ -62,8 +73,8 @@
               <li class="has-dropdown">
                 <a href="#">Llamenos</a>
                 <ul class="dropdown">
-                  <li><font color="white"><span class="fa fa-phone"></span> 02-204-0301</font></li>
-                  <li><font color="white"><span class="fa fa-phone"></span> 098-378-7800</font></li>
+                  <li><font color="white"><span class="fa fa-phone">(02)2040301</span> </font><br></li>
+                  <li><font color="white"><span class="fa fa-phone">(098)3787800</span> </font></li>
                   
                   <li class="divider"></li>
                   <li><a href="#">See all →</a></li>

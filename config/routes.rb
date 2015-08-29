@@ -18,6 +18,7 @@ Rails.application.routes.draw do
    match '/gmatmathdiagnostic', :to => 'profiles#gmatmathdiagnostic',          via: 'get'
      match '/diagnostic', :to => 'profiles#diagnostic',          via: 'get'
       match '/landing', :to => 'profiles#landing',          via: 'get'
+       match '/vocab', :to => 'profiles#vocab',         via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
